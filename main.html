@@ -1,16 +1,88 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <h1>Signup Form</h1>
+    <form method="post">
+        <!-- Name Field -->
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+        <br>
 
+        <!-- Email Field -->
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <br>
+
+        <!-- Gender Field -->
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="gender_m" name="gender" value="male" required>
+            <label for="gender_m">Male</label>
+            <input type="radio" id="gender_f" name="gender" value="female">
+            <label for="gender_f">Female</label>
+        </div>
+        <br>
+
+        <!-- Car Brands Field -->
+        <div>
+            <label for="cars">Car Brands:</label>
+            <select id="cars" name="cars" required>
+                <option value="" disabled selected>--Please choose an option--</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+                <option value="ford">Ford</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <br>
+
+        <!-- Age Field -->
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Age" required>
+        </div>
+        <br>
+
+        <!-- DOB Field -->
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <br>
+
+        <!-- Phone Number Field -->
+        <div>
+            <label for="tel">Phone Number:</label>
+            <input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        </div>
+        <br>
+
+        <!-- Password Field -->
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <br>
+
+        <!-- TOS Checkbox -->
+        <div>
+            <input type="checkbox" id="tos" name="tos" required>
+            <label for="tos">I agree to the TOS</label>
+        </div>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
 </body>
-
 </html>
